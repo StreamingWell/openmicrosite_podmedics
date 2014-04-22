@@ -89,7 +89,7 @@ class User < ActiveRecord::Base
 
   	def send_user_and_admin_notification
       AdminMailer.registration_notification(self).deliver
-      UserMailer.welcome(self).deliver
+      # UserMailer.welcome(self).deliver
   	end
 end
 
