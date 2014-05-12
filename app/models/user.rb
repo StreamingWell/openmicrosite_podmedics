@@ -23,7 +23,7 @@ class User < ActiveRecord::Base
     # reminder_archive - sent nov 27th, jan 16, march 7
     date1 = Date.new(2014, 1, 14)
     date2 = Date.new(2014, 1, 14)
-    date3 = Date.new(2014, 1, 14)
+    date3 = Date.new(2014, 5, 12)
 
     # check if we are on one of the require days
     # send the email to the users who have opted in
@@ -40,7 +40,7 @@ class User < ActiveRecord::Base
     # reminder_evaluation - sent nov 28th, jan 17, march 8
     # date1 = Date.new(2013, 11, 28)
     # date2 = Date.new(2014, 1, 17)
-    # date3 = Date.new(2014, 3, 8)
+    # date3 = Date.new(2014, 4, 25)
 
     # check if we are on one of the require days
     # send the email to the users who have opted in
@@ -89,7 +89,7 @@ class User < ActiveRecord::Base
 
   	def send_user_and_admin_notification
       AdminMailer.registration_notification(self).deliver
-      # UserMailer.welcome(self).deliver
+      UserMailer.welcome(self).deliver
   	end
 end
 
