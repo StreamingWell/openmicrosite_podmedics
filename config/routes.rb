@@ -22,7 +22,7 @@ Openmicrosite::Application.routes.draw do
   #get 'login' => 'pages#login'
   #get 'evaluation' => 'pages#evaluation'
   #get 'help' => 'pages#help'
-  # get 'temp' => 'pages#temp'
+   get 'temp' => 'pages#temp'
   # get 'pi' => 'pages#pi'
 
   # Feedback/submissions
