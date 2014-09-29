@@ -1,4 +1,4 @@
-class UserMailer < ActionMailer::Base
+#class UserMailer < ActionMailer::Base
   default :from => "noreply@astellasoncology.co.uk"
   layout 'mail'
 
@@ -27,4 +27,4 @@ class UserMailer < ActionMailer::Base
     mail(subject: 'Notification that a recent Prostate Cancer Lunchtime Webinar is now available to view', to: user.email)
   end
 
-end
+#end
