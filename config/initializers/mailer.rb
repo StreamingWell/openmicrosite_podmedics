@@ -1,0 +1,2 @@
+require 'blaclist_emails_interceptor'
+ActionMailer::Base.register_interceptor(BlaclistEmailsInterceptor)
